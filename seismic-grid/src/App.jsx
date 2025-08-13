@@ -154,7 +154,7 @@ export default function App() {
   return (
     <div className="app-container">
       <div className="sidebar">
-        <h2>Seismic Block Generator</h2>
+        <h2>Seismic Layer View(BETA)</h2>
 
         <label>X1<input type="number" value={x1} onChange={(e) => setX1(+e.target.value)} /></label>
         <label>Y1<input type="number" value={y1} onChange={(e) => setY1(+e.target.value)} /></label>

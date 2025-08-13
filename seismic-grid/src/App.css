@@ -43,6 +43,7 @@ html, body, #root {
   font-weight: 500;
 }
 
+/* Add spacing between inputs */
 .sidebar input[type="number"],
 .sidebar input[type="color"] {
   width: 100%;
@@ -52,15 +53,26 @@ html, body, #root {
   background: #2a2a2a;
   color: white;
   font-size: 14px;
+  margin-bottom: 10px; /* added spacing */
   transition: border 0.2s ease, background 0.2s ease;
 }
 
+/* Focus effect remains the same */
 .sidebar input[type="number"]:focus,
 .sidebar input[type="color"]:focus {
   border-color: #4da6ff;
   background: #222;
   outline: none;
 }
+
+/* Keep layer-control inputs neatly spaced inside */
+.sidebar .layer-control input[type="number"],
+.sidebar .layer-control input[type="color"] {
+  width: calc(100% - 4px);
+  margin-top: 4px;
+  margin-bottom: 8px; /* extra spacing inside the box */
+}
+
 
 .sidebar .layer-control {
   background: #252525;
