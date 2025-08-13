@@ -1,0 +1,121 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 20%;
+  background: linear-gradient(180deg, #1f1f1f 0%, #181818 100%);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-right: 1px solid #333;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.4);
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar section {
+  margin-bottom: 20px;
+}
+
+.sidebar label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sidebar input[type="number"],
+.sidebar input[type="color"] {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: white;
+  font-size: 14px;
+  transition: border 0.2s ease, background 0.2s ease;
+}
+
+.sidebar input[type="number"]:focus,
+.sidebar input[type="color"]:focus {
+  border-color: #4da6ff;
+  background: #222;
+  outline: none;
+}
+
+.sidebar .layer-control {
+  background: #252525;
+  padding: 12px; /* added padding inside */
+  border-radius: 6px;
+  margin-bottom: 12px;
+  border: 1px solid #333;
+}
+
+.sidebar .layer-control input[type="number"],
+.sidebar .layer-control input[type="color"] {
+  width: calc(100% - 4px); /* keeps small gap from edges */
+  margin-top: 4px;
+}
+
+
+.sidebar button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  background: #3a3a3a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar button:hover {
+  background: #4da6ff;
+  transform: translateY(-1px);
+}
+
+.sidebar button:active {
+  transform: translateY(1px);
+}
+
+/* Custom Scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* 3D Viewport */
+.viewport {
+  width: 80%;
+  height: 100%;
+  background: #111;
+}
